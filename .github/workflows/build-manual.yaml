@@ -6,7 +6,7 @@ on:
       arch:
         description: "Target architecture"
         required: true
-        default: x86_64
+        default: mt7620
 
       sdk_version:
         type: choice
