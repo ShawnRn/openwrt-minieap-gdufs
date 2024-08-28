@@ -50,6 +50,6 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ github.event.inputs.target_system }}-${{ github.event.inputs.subtarget }}-${{ github.event.inputs.sdk_version }}
-          path: path: bin/packages/${{ github.event.inputs.target_system }}_${{ github.event.inputs.subtarget }}/packages/*.ipk
+          name: ${{ github.event.inputs.arch }}-${{ github.event.inputs.sdk_version }}
+          path: bin/packages/${{ github.event.inputs.arch }}/action/*.ipk
           retention-days: 7
